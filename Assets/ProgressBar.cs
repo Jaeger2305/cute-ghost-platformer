@@ -27,8 +27,16 @@ public class ProgressBar : MonoBehaviour
         float adjustedProgress = Mathf.Clamp(progress, minProgress, maxProgress);
         bar.localScale = new Vector3(adjustedProgress / 100, 1f, 1f);
         this.progress = adjustedProgress;
-        if (adjustedProgress >= maxProgress) maxReached.Invoke();
-        else if (adjustedProgress <= minProgress) minReached.Invoke();
+        if (adjustedProgress >= maxProgress)
+        {
+            Debug.Log(string.Format("progress of {2} set to {0}, which exceeds the max progress of {1}", progress, maxProgress, name));
+            maxReached.Invoke();
+        }
+        else if (adjustedProgress <= minProgress)
+        {
+            Debug.Log(string.Format("progress of {2} set to {0}, which exceeds the min progress of {1}", progress, minProgress, name));
+            minReached.Invoke();
+        }
     }
 
     public void AdjustProgressPercent(float progress)

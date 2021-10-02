@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GhostPlayerController : MonoBehaviour
 {
-    private float intimidation = 0f;
-    private float shyness = 100f;
+    private float intimidation = 1f;
+    private float shyness = 1f;
     void Start()
     {
         gameObject.transform.Find("ShyProgressBar").GetComponent<ProgressBar>().SetProgressPercent(shyness);
