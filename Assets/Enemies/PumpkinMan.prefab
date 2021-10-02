@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 865600423}
   - component: {fileID: 865600424}
   - component: {fileID: 865600425}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: PumpkinMan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,6 +118,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiPath: {fileID: 0}
+  patrolRange: {x: 2, y: 6}
+  visionRange: 6
+  stopChaseDistance: 7
 --- !u!114 &865600423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,9 +164,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.6
-  pickNextWaypointDist: 2
-  endReachedDistance: 0.2
+  slowdownDistance: 2
+  pickNextWaypointDist: 4
+  endReachedDistance: 2
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
