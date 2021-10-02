@@ -12,8 +12,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Projectile
+  - Damageable
   - 
   - 
   - 
@@ -41,6 +41,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Players
+    uniqueID: 1150940461
+    locked: 0
+  - name: Projectile
+    uniqueID: 2025217865
     locked: 0
   - name: InfoOverlay
     uniqueID: 2797207257

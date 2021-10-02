@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 668213155413517059}
   - component: {fileID: 404671213}
   - component: {fileID: 404671214}
+  - component: {fileID: 2066336364979959297}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -230,6 +231,18 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2066336364979959297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5824537663622898312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5323967bd071b4dbfdc04d0225750e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5852526668554900313
 GameObject:
   m_ObjectHideFlags: 0
