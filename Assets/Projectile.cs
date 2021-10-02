@@ -18,6 +18,7 @@ public class Projectile : MonoBehaviour
 
     public void Init(Transform target, Transform source, int speedFactor, float damage)
     {
+        GetComponentInChildren<SpriteRenderer>().color = new Color(Random.Range(0.2f, 1f), Random.Range(0.2f, 1f), Random.Range(0.2f, 1f));
         this.transform.position = source.position;
         this.damage = damage;
         this.speedFactor = speedFactor;

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ProjectileController : MonoBehaviour
 {
     public GameObject projectilePrefab;
+    [SerializeField]
     private float cooldownBetweenShots = 0.5f;
     private float cooldown = 0f;
 
