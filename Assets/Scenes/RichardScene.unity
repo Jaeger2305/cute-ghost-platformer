@@ -1175,6 +1175,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 6847270866757393842}
+    - target: {fileID: 1964947408424209664, guid: 770113a44e8eca347969ca50f2deb68b, type: 3}
+      propertyPath: m_AngularDrag
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2065333916813469514, guid: 770113a44e8eca347969ca50f2deb68b, type: 3}
       propertyPath: m_Name
       value: PumpkinMan

@@ -13,6 +13,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     //private EnemyPathfindingMovement pathfindingMovement;
+    public AIPath aiPath;
     private Vector3 startingPosition;
     private Vector3 roamPosition;
     private float nextShootTime;
@@ -47,7 +49,6 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        return; // not setup yet
         //switch (state)
         //{
         //    default:
