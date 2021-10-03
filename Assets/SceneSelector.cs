@@ -7,6 +7,14 @@ public class SceneSelector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GetComponent<FaderTransition>().RevealContentUnderThisSprite();
         GetComponent<SceneLoader>().SceneLoadAfterSeconds(4); // obvious rubbish, just immediately loads next scene
+        Invoke("FadeOut", 2);
+    }
+
+    void FadeOut()
+    {
+
+        GetComponent<FaderTransition>().HideContentUnderThisSprite();
     }
 }
