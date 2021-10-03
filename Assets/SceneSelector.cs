@@ -8,8 +8,8 @@ public class SceneSelector : MonoBehaviour
     void Start()
     {
         GetComponent<FaderTransition>().RevealContentUnderThisSprite();
-        GetComponent<SceneLoader>().SceneLoadAfterSeconds(4); // obvious rubbish, just immediately loads next scene
-        Invoke("FadeOut", 2);
+        GetComponent<SceneLoader>().SceneLoadAfterSeconds(5); // obvious rubbish, just immediately loads next scene
+        Invoke("FadeOut", 3);
     }
 
     void FadeOut()
