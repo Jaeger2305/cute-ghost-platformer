@@ -45,6 +45,15 @@ TagManager:
   - name: background
     uniqueID: 2166757531
     locked: 0
+  - name: midground
+    uniqueID: 2666182077
+    locked: 0
+  - name: foreground-top
+    uniqueID: 2253606819
+    locked: 0
+  - name: foreground
+    uniqueID: 333058471
+    locked: 0
   - name: collectable
     uniqueID: 2808294411
     locked: 0

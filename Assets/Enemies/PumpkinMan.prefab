@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 4933984120607510035, guid: fce2033222106d34c9f374ddba6c58f9, type: 3}
+  cooldownBetweenShots: 0.5
 --- !u!70 &128066211693492048
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -121,6 +122,7 @@ MonoBehaviour:
   patrolRange: {x: 2, y: 6}
   visionRange: 6
   stopChaseDistance: 7
+  attackRange: 10
 --- !u!114 &865600423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +212,7 @@ GameObject:
   - component: {fileID: 1974081991674516084}
   - component: {fileID: 6808451302961979143}
   - component: {fileID: 5295507485251606081}
+  - component: {fileID: 4618009184902983345}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -251,7 +254,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -270,7 +273,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1150940461
-  m_SortingLayer: 1
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5acab47aa87a0924a81af2711c969078, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -296,3 +299,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiPath: {fileID: 865600424}
+--- !u!114 &4618009184902983345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7295976106136642504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000009b182681bdb5ea9ea34f5386a711da130b2c63a72df59944495fb678d9feb9a6c3cd0b07
+  m_ShapePath:
+  - {x: -5.264531, y: -6.239797, z: -0.00000013474141}
+  - {x: -5.9811187, y: -0.25740352, z: -0.00007831055}
+  - {x: -4.612008, y: 5.750399, z: -0.00000013474141}
+  - {x: 0.45216483, y: 8.931433, z: -0.00000013474141}
+  - {x: 5.6827116, y: 7.491298, z: -0.00007831055}
+  - {x: 2.746364, y: 5.8599896, z: -0.00007831055}
+  - {x: 4.5407996, y: 3.5761616, z: -0.00007831055}
+  - {x: 2.8991237, y: -5.3425756, z: -0.00000013474141}
+  m_ShapePathHash: 227278067
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -615834
