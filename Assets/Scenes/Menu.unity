@@ -870,7 +870,7 @@ GameObject:
   - component: {fileID: 1347572087}
   - component: {fileID: 1347572086}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: SmokeParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
