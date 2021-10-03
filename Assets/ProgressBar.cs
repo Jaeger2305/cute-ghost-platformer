@@ -25,7 +25,10 @@ public class ProgressBar : MonoBehaviour
     public void SetProgressPercent(float progress)
     {
         float adjustedProgress = Mathf.Clamp(progress, minProgress, maxProgress);
+
         bar.localScale = new Vector3(adjustedProgress / 100, 1f, 1f);
+
+        if (this.progress == adjustedProgress) return; // no change, don't trigger the events/handlings 
         this.progress = adjustedProgress;
         if (adjustedProgress >= maxProgress)
         {
